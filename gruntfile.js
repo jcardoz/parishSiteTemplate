@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         concat: {
             basic: {
                 src: ['src/scripts/custom.js'],
-                dest: '.tmp/scripts/custom.js',
+                dest: 'src/scripts/custom.js',
             },
             extras: {
                 src: ['src/scripts/vendor/jquery-1.12.4.js', 'src/scripts/vendor/bootstrap.js'],
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    '.tmp/styles/css/custom.css': 'src/styles/scss/custom.scss'
+                    'src/styles/css/custom.css': 'src/styles/scss/custom.scss'
                 }
             }
         },
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
                 },
             },*/
             css: {
-                files: ['styles/scss/*.scss'],
+                files: ['src/styles/scss/*.scss'],
                 tasks: ['sass'],
                 options: {
                     spawn: false,
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
             target: {
                 files: {
                     'dist/styles/vendor.min.css': ['src/styles/css/vendor/*.css'],
-                    'dist/styles/custom.min.css': ['.tmp/styles/css/custom.css']
+                    'dist/styles/custom.min.css': ['src/styles/css/custom.css']
                 }
             }
         },
@@ -96,7 +96,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-copy');
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['sass', 'watch']);
     grunt.registerTask('build', ['concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'copy']);
 
 

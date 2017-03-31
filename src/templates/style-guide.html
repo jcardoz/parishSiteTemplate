@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parish Template - Style Guide</title>
+    <!-- Begin styles here -->
+    <link rel="stylesheet" href="../styles/css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="../styles/css/vendor/prism.css">
+    <link rel="stylesheet" href="../styles/css/vendor/guide.css">
+    <link rel="stylesheet" href="../styles/css/custom.css">
+    <!-- For Production, Uncomment the following lines below -->
+    <!-- End styles here -->
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <!-- Begin Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    St. Peters
+                </a>
+            </div>
+            <!-- Button will be visible for small viewports below 768px-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-content">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- End Button -->
+            <p class="navbar-text"><span class="navbar-header-text">Visual Style Guide</span></p>
+            <div class="collapse navbar-collapse" id="navigation-content">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Fonts <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#Typography">Typography</a></li>
+                            <li><a href="#Headers">Headers</a></li>
+                            <li><a href="#Paragraphs">Paragraphs</a></li>
+                            <li><a href="#Hyperlinks">Hyperlinks</a></li>
+                            <li><a href="#Lists">Lists</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation"><a href="#Colors">Colors</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Form Fields<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#Fields">Fields</a></li>
+                            <li><a href="#Checkboxes">Checkboxes</a></li>
+                            <li><a href="#Radio">Radio buttons</a></li>
+                            <li><a href="#Select">Select</a></li>
+                            <li><a href="#Date">Date pickers</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#Error">Error Messages</a></li>
+                            <li><a href="#Required">Required Fields</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#IconBefore">Icon before Field</a></li>
+                            <li><a href="#IconBelow">Icon below Field</a></li>
+                            <li><a href="#TextBelow">Text below Field</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#Alerts">Alerts</a></li>
+                            <li><a href="#HelpText">Help text</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation"><a href="#Buttons">Buttons</a></li>
+                    <li role="presentation"><a href="#Layout">Layout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation Bar -->
+    <!-- Begin main container -->
+    <div class="container">
+        <div class="row">
+            <!-- Begin Font section -->
+            <div class="col-xs-12">
+                <h1 class="topheader" id="Fonts">
+                    <small>#1 </small>
+                    Fonts
+                </h1>
+                <hr />
+                <h2 id="Typography">
+                    <small>#1.1 </small>Typography
+                </h2>
+                <hr />
+                <p class="style-info">Open Sans is the brand font used in all design applications. Its clean, simple design and variety of weights make it ideal for titles, headlines and paragraphs.
+                </p>
+                <p class="style-info">
+                    We will be using Open Sans for all text elements. Do not move away from this font family and apply additional fonts to specific elements.
+                </p>
+                <hr />
+                <h2 id="Headers">
+                    <small>#1.2 </small>Headers
+                </h2>
+                <hr />
+                <p class="style-info">
+                    All HTML headings, &lt;h1&gt; through &lt;h6&gt;, are available.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+                        <h1 class="bold">Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+                        <h1 class="italic">Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+                        <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
+                        <h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
+                        <h4>Grumpy wizards make toxic brew for the evil Queen and Jack</h4>
+                        <h5>Grumpy wizards make toxic brew for the evil Queen and Jack</h5>
+                        <h6>Grumpy wizards make toxic brew for the evil Queen and Jack</h6>
+                        <h1 class="txt-puro-blue">The five boxing wizards jump quickly.</h1>
+                        <h1 class="txt-puro-blue bold">The five boxing wizards jump quickly.</h1>
+                        <h1 class="txt-puro-blue italic">The five boxing wizards jump quickly.</h1>
+                        <h2 class="txt-puro-blue">The five boxing wizards jump quickly.</h2>
+                        <h3 class="txt-puro-blue">The five boxing wizards jump quickly.</h3>
+                        <h4 class="txt-puro-blue">The five boxing wizards jump quickly.</h4>
+                        <h5 class="txt-puro-blue">The five boxing wizards jump quickly.</h5>
+                        <h6 class="txt-puro-blue">The five boxing wizards jump quickly.</h6>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    Use the class <span class="highlight">.h1</span> through <span class="highlight">.h6</span> for when you want to match the font styling of a heading but still want your text to be displayed inline. i.e. on the same line.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <span class="h1">This</span>
+                        <span class="h2">text</span>
+                        <span class="h3">keeps</span>
+                        <span class="h4">getting</span>
+                        <span class="h5">smaller</span>
+                        <span class="h6">and smaller.</span>
+                    </div>
+                </div>
+                <h2 id="Paragraphs">
+                    <small>#1.3 </small>Paragraphs
+                </h2>
+                <hr />
+                <p class="style-info">
+                    Use the &lt;p&gt; tag to create a paragraph. The font size is set to 14px. There is no need to add any additional classes to the &lt;p&gt; tag
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus nobis illum, deleniti odio tempore sit cumque, modi eaque, laudantium soluta! Voluptates officiis aperiam quam distinctio veritatis tempora ad perspiciatis.
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="Hyperlinks">
+                    <small>#1.4 </small>Hyperlinks
+                </h2>
+                <p class="style-info">
+                    A link from a hypertext document to another location, activated by clicking on a highlighted word or image
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <a href="http://google.com/">google</a>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="Lists">
+                    <small>#1.5 </small>Lists
+                </h2>
+                <h3><small>#1.5.1</small>
+                    Unordered Lists
+                </h3>
+                <p class="style-info indent">
+                    A list of items in which the order does not explicitly matter is known as an unordered list. Use the &lt;ul&gt; tag along with &lt;li&gt; tags for each list item.
+                </p>
+                <p class="style-example indent">
+                    Example
+                </p>
+                <div class="style-example indent">
+                    <div data-xrayhtml class="prism">
+                        <ul>
+                            <li>lorem</li>
+                            <li>ipsum</li>
+                            <li>dolor</li>
+                            <li>sit</li>
+                            <li>amet</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <h3><small>#1.5.2</small>
+                    Ordered Lists
+                </h3>
+                <p class="style-info indent">
+                    A list of items in which the order does explicitly matter is known as an ordered list. Use the &lt;ol&gt; tag along with &lt;li&gt; tags for each list item.
+                </p>
+                <p class="style-example indent">
+                    Example
+                </p>
+                <div class="style-example indent">
+                    <div data-xrayhtml class="prism">
+                        <ol>
+                            <li>Oranges</li>
+                            <li>Apples</li>
+                            <li>Bananas</li>
+                            <li>Grapes</li>
+                            <li>Lemons</li>
+                            <li>Strawberries</li>
+                            <li>Pomegranates</li>
+                            <li>Custard Apples</li>
+                            <li>Musk Melons</li>
+                            <li>Watermelons</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <!-- End Font section -->
+            <!-- Begin Color section -->
+            <div class="col-xs-12">
+                <h1 id="Colors">
+                    <small>#2 </small>
+                    Colors
+                </h1>
+                <p class="style-info">
+                    All the color-palette colors are available with "background" and "text" color. Background classes are prefixed with <span class="highlight">bg-</span> and text color classes are prefixed with <span class="highlight">txt-</span>.
+                    <br />Note: The success and warning classes are only present as background classes.
+                </p>
+                <div class="style-example">
+                    <h3>
+                        Blue Shades
+                    </h3>
+                    <ul class="style-color">
+                        <li class="bg-puro-blue">puro-blue
+                            <br />#001996</li>
+                        <li class="bg-dark-cyan">dark-cyan
+                            <br />#00a9e0</li>
+                        <li class="bg-med-cyan">med-cyan
+                            <br />#5bc6e8</li>
+                        <li class="bg-light-cyan">light-cyan
+                            <br />#a3dbe8</li>
+                    </ul>
+                    <h3>
+                        Additional Colors
+                    </h3>
+                    <ul class="style-color">
+                        <li class="bg-puro-red">puro-red
+                            <br />#f00000</li>
+                        <li class="bg-green">green
+                            <br/>#1d9c5a</li>
+                        <li class="bg-success">success
+                            <br />#dff0d8</li>
+                        <li class="bg-warning">warning
+                            <br />#fde3e3</li>
+                    </ul>
+                    <h3>
+                        Gray Shades
+                    </h3>
+                    <ul class="style-color">
+                        <li class="bg-black">black
+                            <br />#000000</li>
+                        <li class="bg-puro-gray">puro-gray
+                            <br />#7a6e67</li>
+                        <li class="bg-gray-medium">gray-medium
+                            <br />#bababa</li>
+                        <li class="bg-gray-light">gray-light
+                            <br />#f0f0f0</li>
+                    </ul>
+                </div>
+                <p class="style-example">
+                    Text Examples
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <p class="txt-puro-blue">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p class="txt-green">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        <p class="txt-puro-red">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+                <p class="style-example">
+                    Background Examples
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <p class="bg-success">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                        <p class="bg-warning">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Color section -->
+            <!-- Begin Form Fields section -->
+            <div class="col-xs-12">
+                <h1>
+                    <small>#3 </small>
+                    Form Fields
+                </h1>
+                <hr />
+                <h2 id="Fields">
+                    <small>#3.1 </small>Fields
+                </h2>
+                <p class="style-info">
+                    Individual form controls automatically receive global styling from bootstrap. All textual &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; elements with .form-control are set to width: 100%; by default. Wrap labels and controls in <span class="highlight">form-group</span> class for optimum spacing.
+                </p>
+                <p class="style-info">
+                    Be sure to include a &lt;form&gt; tag before adding &lt;input&gt; elements on a page.
+                </p>
+                <p class="style-info">
+                    For form fields, place a &lt;label&gt; tag followed by an &lt;input&gt; tag within a &lt;div&gt; tag. Ensure to use the <span class="highlight">form-group</span> class for the div.
+                </p>
+                <p class="style-info">
+                    For &lt;textarea&gt; tags, be sure to mention the <span class="highlight">row</span> attribute to specify the number of rows.
+                </p>
+                <p class="style-info">
+                    By Default, all form elements will have a width of 100%.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <div class="form-group">
+                                <label for="input-name">Name</label>
+                                <input type="text" class="form-control" id="input-name" placeholder="Enter name"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-email">Email address</label>
+                                <input type="email" class="form-control" id="input-email" placeholder="Enter email"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-description">Description</label>
+                                <textarea class="form-control" rows="3" id="input-description" placeholder="Enter Description"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    For form elements to remain inline, provide the form with the following class <span class="highlight">form-inline</span>. This will allow them to remain on the same line and will not move to the next line.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="input-phone">Phone Number</label>
+                                <input type="number" class="form-control" id="input-phone" placeholder="xxxx-xxx-xxx"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-extension">Extension</label>
+                                <input type="number" class="form-control" id="input-extension" placeholder="xxx"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    To disable a form element, add the <span class="highlight">disabled</span> attribute to the specific tag. A value can be specified but the presence of the attribute is enough to disable the field.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <div class="form-group">
+                                <label for="input-age">Age</label>
+                                <input type="number" class="form-control" id="input-age" value="26" disabled="disabled"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="Checkboxes">
+                    <small>#3.2 </small>Checkboxes
+                </h2>
+                <p class="style-info">
+                    Checkboxes are for selecting one or more options from a list.
+                </p>
+                <p class="style-info">
+                    Use the <span class="highlight">checkbox</span> class for the container &lt;div&gt; when using checkboxes.</p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="1"> Option 1
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="2"> Option 2
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="3"> Option 3
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    Use the <span class="highlight">checkbox-inline</span> classes for a series of checkboxes to appear on the same line.</p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="1"> Option 1
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="2"> Option 2
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="3"> Option 3
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    Use the <span class="highlight">disabled</span> class to disable a checkbox</p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <div class="checkbox disabled">
+                                <label>
+                                    <input type="checkbox" value="1" disabled="disabled"> Option 1
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="Radio">
+                    <small>#3.3 </small>Radio Buttons
+                </h2>
+                <p class="style-info">
+                    Radio buttons are used when a single option is to be selected.
+                </p>
+                <p class="style-info">
+                    Always remember to use the same <span class="highlight">name</span> attribute for each of the radio buttons to ensure that only a single one can be selected at a time.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadio1" value="1"> Option 1
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadio2" value="2"> Option 2
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadio3" value="3"> Option 3
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    Use the <span class="highlight">checkbox-inline</span> classes for a series of radio-buttons to appear on the same line.</p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">Option 1
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">Option 2
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">Option 3
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    Use the <span class="highlight">disabled</span> class to disable a radio button</p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <div class="radio disabled">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="1" disabled="disabled"> Option 1
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="Select">
+                    <small>#3.4 </small>Select
+                </h2>
+                <p class="style-info">
+                    Note that many native select menus (in Safari and Chrome) have rounded corners that cannot be modified via border-radius properties.
+                </p>
+                <p class="style-info">
+                    To show more than a single item at a time, use the <span class="highlight">multiple</span> attribute
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <!-- Split button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">Action</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">A Third Option</a></li>
+                                <li><a href="#">An additional Option</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <hr />
+                <h2 id="Date">
+                    <small>#3.5 </small>Date Pickers
+                </h2>
+                <p class="style-info">
+                    Date pickers provide the user with a easy to use calendar interface. This gives them the ability to easily select a single date or a range of dates.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <div class="form-group">
+                                <label for="input-date">Start Date</label>
+                                <input type="text" class="form-control" id="input-date"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    We can also add a calendar icon to the field and initiate the same when the user clicks on the calendar icon.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="input-icon">Iconic date</label>
+                                <input type="text" class="form-control" id="input-icon" name="from">
+                                </input>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="Error">
+                    <small>#3.6 </small>Error Messages
+                </h2>
+                <p class="style-info">
+                    For error styling, provide the container &lt;div&gt; with the <span class="highlight">has-error</span> class.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form class="form-horizontal">
+                            <!-- Name -->
+                            <div class="form-group has-error">
+                                <label for="input-name-error" class="col-xs-2 control-label">Name</label>
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control" id="input-name-error">
+                                    <span class="error-block">
+                                    Name cannot have special characters
+                                </span>
+                                </div>
+                            </div>
+                            <!-- End Name -->
+                            <!-- Email Address -->
+                            <div class="form-group has-error">
+                                <label for="input-extension-error-horiz" class="col-xs-2 control-label">Email</label>
+                                <div class="col-xs-3">
+                                    <input type="email" class="form-control" id="input-extension-error-horiz">
+                                    <span class="error-block">
+                                    Invalid email address
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- End Email Address -->
+                            <!-- Phone number and extension -->
+                            <div class="form-group">
+                                <label for="register-phone" class="col-xs-2 control-label">Phone</label>
+                                <div class="col-xs-5">
+                                    <div class="row">
+                                        <div class="col-xs-5 has-error">
+                                            <input name="register-phone" type="text" class="form-control" />
+                                            <span class="error-block">
+                                                Invalid phone number
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-7 form-inline">
+                                            <label for="register-extension">Ext</label>
+                                            <input name="register-extension" type="text" class="form-control form-field-small" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End phone number and extension -->
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="Required">
+                    <small>#3.7 </small>Required Fields
+                </h2>
+                <p class="style-info">
+                    Provide the <span class="highlight">text-red</span> class to the field to provide the * mark for required fields.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <div class="form-group">
+                                <label for="input-name-required">Name <span class="txt-puro-red">*</span></label>
+                                <input type="text" class="form-control required" id="input-name-required" placeholder="Enter name">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="IconBefore">
+                    <small>#3.8 </small>Icon before Field
+                </h2>
+                <p class="style-info">
+                    To add an icon before an input field, enclose the input tag within a div with the following class. <span class="highlight">input-group</span>. Within this class, include a div before the input field with the <span class="highlight">input-group-addon</span> class. Within this class, include the icon or text element to be shown before the field.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="input-email-ib" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="input-password-ib" placeholder="Password">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="IconBelow">
+                    <small>#3.9 </small>Icon below Field
+                </h2>
+                <p class="style-info">
+                    Use the class <span class="highlight">input-group-addon-below</span> to add icons below an input field
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputCreditCard" class="col-xs-2 control-label">Card Number</label>
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control" id="inputCreditCard">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    Add a <span class="highlight">disabled</span> class to the icons to display them in the disabled state.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputCreditCard" class="col-xs-2 control-label">Card Number</label>
+                                <div class="col-xs-3">
+                                    <input type="text" class="form-control" id="inputCreditCard">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="TextBelow">
+                    <small>#3.10 </small>Text Below the field
+                </h2>
+                <p class="style-info">
+                    In certain cases, such as to and from date ranges, we might require the labels to be present below the field. In this case, move the label below the field
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="input-phone-below" placeholder="xxxx-xxx-xxx">
+                                <label for="input-phone-below">Phone Number</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="input-extension-below" placeholder="xxx">
+                                <label for="input-extension-below">Extension</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+                <h2 id="Alerts">
+                    <small>#3.11 </small>Alerts
+                </h2>
+                <p class="style-info">
+                    Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Wrap any text and an optional dismiss button in <span class="highlight">alert</span> and one of the contextual classes <span class="highlight">alert-success</span>and <span class="highlight">alert-danger</span> for basic alert messages.
+                </p>
+                <p class="style-info">
+                    Build on any alert by adding an optional <span class="highlight">alert-dismissible</span> class and a close button.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <!-- Begin Message -->
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Announcement:</strong> Lorem Ipsum dolor sit amet, consectutor.
+                            <button type="button" class="close icon" data-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <!-- End Message -->
+                        <!-- Begin Message -->
+                        <div class="alert alert-success" role="alert">
+                            <strong>Announcement:</strong> Lorem Ipsum dolor sit amet, consectutor.
+                            <button type="button" class="close icon" data-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <!-- End Message -->
+                    </div>
+                </div>
+                <hr />
+                <h2 id="HelpText">
+                    <small>#3.12 </small>Help Text
+                </h2>
+                <p class="style-info">
+                    Help text should be explicitly associated with the form control it relates to using the <span class="highlight">aria-describedby</span>attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <form>
+                            <div class="form-group">
+                                <label for="input-HelpBlock">Input with help text</label>
+                                <input type="text" id="input-HelpBlock" class="form-control" aria-describedby="help-Block"></input>
+                                <span id="helpBlock" class="help-block">
+                                A block of help text that breaks onto a new line and may extend beyond one line.
+                            </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <!-- End Form Fields section -->
+            <!-- Begin Button Section -->
+            <div class="col-xs-12">
+                <h1 id="Buttons">
+                    <small>#4 </small>
+                    Buttons
+                </h1>
+                <hr />
+                <p class="style-info">
+                    Use the button classes on an &lt;a&gt;, &lt;button&gt;, or &lt;input&gt; element.
+                </p>
+                <p class="style-info">
+                    If the &lt;a&gt; elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate <span class="highlight">role="button"</span> attribute.
+                </p>
+                <p class="style-info">
+                    Always use the <span class="highlight">btn</span> base class and apply the additional classes along with it.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <button type="button" class="btn btn-primary">btn-primary</button>
+                        <a href="#" class="btn btn-secondary" role="button">btn-secondary</a>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    Add the <span class="highlight">btn-lg</span> class for large buttons, <span class="highlight">btn-sm</span> for small buttons and <span class="highlight">btn-xs</span> for extra-small buttons.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <p>
+                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-primary">Default button</button>
+                            <button type="button" class="btn btn-secondary">Default button</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+                            <button type="button" class="btn btn-secondary btn-xs">Extra small button</button>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <!-- End Button section -->
+            <!-- Begin Layout Section -->
+            <div class="col-xs-12">
+                <h1 id="Layout">
+                    <small>#7 </small>
+                    Layout
+                </h1>
+                <hr />
+                <p class="style-info">
+                    Bootstrap uses columns and rows for its grid system. Think of a table, where columns represent vertical divisions and rows horizontal divisions.
+                </p>
+                <p class="style-info">
+                    When creating a layout, wrap your columns within a <span class="highlight">row</span> class. Use the <span class="highlight">col-xs-</span> class along with the number of columns (Maximum of 12) to add columns to that row.
+                </p>
+                <p class="style-info">
+                    For example, to create a 2 column layout, we will use two columns of <span class="highlight">col-xs-6</span> each (6 X 2 = 12).
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores debitis sequi corporis magnam eligendi doloribus necessitatibus, modi et praesentium quas beatae, esse repellat quam, numquam voluptatibus omnis alias dolores?
+                            </div>
+                            <div class="col-xs-6">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur veritatis nemo maxime iusto. Exercitationem velit maxime aut quae nobis libero culpa excepturi? Reiciendis accusamus repudiandae placeat, magnam cum consectetur facilis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    Similarly, for a 3 column layout, we use 3 columns of <span class="highlight">col-xs-4</span> each as 4 X 3 = 12.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores debitis sequi corporis magnam eligendi doloribus necessitatibus, modi et praesentium quas beatae, esse repellat quam, numquam voluptatibus omnis alias dolores?
+                            </div>
+                            <div class="col-xs-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur veritatis nemo maxime iusto. Exercitationem velit maxime aut quae nobis libero culpa excepturi? Reiciendis accusamus repudiandae placeat, magnam cum consectetur facilis.
+                            </div>
+                            <div class="col-xs-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur veritatis nemo maxime iusto. Exercitationem velit maxime aut quae nobis libero culpa excepturi? Reiciendis accusamus repudiandae placeat, magnam cum consectetur facilis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    For a 70 - 30 layout where-in one column is 70% and the other is 30%, use the following layout <span class="highlight">col-xs-8</span> for the 70% and <span class="highlight">col-xs-4</span> for the 30% section.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <h2>70% Content</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores debitis sequi corporis magnam eligendi doloribus necessitatibus, modi et praesentium quas beatae, esse repellat quam, numquam voluptatibus omnis alias dolores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sunt ex pariatur ad libero culpa, nisi ea blanditiis quisquam dicta adipisci, aperiam quas, accusantium deleniti assumenda autem voluptate ipsam. Odio.
+                            </div>
+                            <div class="col-xs-4">
+                                <h2>30% Content</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur veritatis nemo maxime iusto. Exercitationem velit maxime aut quae nobis libero culpa excepturi? Reiciendis accusamus repudiandae placeat, magnam cum consectetur facilis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    For an 80 - 20 layout where-in one column is 80% and the other is 20%, use the following layout <span class="highlight">col-xs-9</span> for the 80% and <span class="highlight">col-xs-3</span> for the 20% section.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <div class="row">
+                            <div class="col-xs-9">
+                                <h2>80% Content</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores debitis sequi corporis magnam eligendi doloribus necessitatibus, modi et praesentium quas beatae, esse repellat quam, numquam voluptatibus omnis alias dolores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sunt ex pariatur ad libero culpa, nisi ea blanditiis quisquam dicta adipisci, aperiam quas, accusantium deleniti assumenda autem voluptate ipsam. Odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur maiores ducimus voluptatibus nemo cupiditate harum neque molestiae officiis vero assumenda culpa saepe praesentium libero quaerat quos sunt, ipsum aperiam laborum.
+                            </div>
+                            <div class="col-xs-3">
+                                <h2>20% Content</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur veritatis nemo maxime iusto. Exercitationem velit maxime aut quae nobis libero culpa excepturi? Reiciendis accusamus repudiandae placeat, magnam cum consectetur facilis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <p class="style-info">
+                    For an 60 - 40 layout where-in one column is 60% and the other is 40%, use the following layout <span class="highlight">col-xs-7</span> for the 60% and <span class="highlight">col-xs-5</span> for the 40% section.
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <div class="row">
+                            <div class="col-xs-7">
+                                <h2>60% Content</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo maiores debitis sequi corporis magnam eligendi doloribus necessitatibus, modi et praesentium quas beatae, esse repellat quam, numquam voluptatibus omnis alias dolores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime sunt ex pariatur ad libero culpa, nisi ea blanditiis quisquam dicta adipisci, aperiam quas, accusantium deleniti assumenda autem voluptate ipsam. Odio.
+                            </div>
+                            <div class="col-xs-5">
+                                <h2>40% Content</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur veritatis nemo maxime iusto. Exercitationem velit maxime aut quae nobis libero culpa excepturi? Reiciendis accusamus repudiandae placeat, magnam cum consectetur facilis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <!-- End Layout section -->
+        </div>
+    </div>
+    <!-- Begin scripts here -->
+    	<script src="../scripts/vendor/jquery-1.12.4.js"></script>
+    <script src="../scripts/vendor/bootstrap.js"></script>
+    <script src="../scripts/vendor/X-rayHTML.js"></script>
+    <script src="../scripts/vendor/prism.min.js"></script>
+    <script src="../scripts/custom.js" />
+    <script>
+    // Function to display the code snippets with syntax highlighting
+    $(window).bind("create.xrayhtml", function(event) {
+        var prism = !!~event.target.getAttribute("class").indexOf("prism");
+
+        if (prism && "Prism" in window) {
+            $(".prism").find("code").addClass("language-markup");
+            Prism.highlightAll();
+        }
+    });
+    </script>
+    <!-- For Production, Uncomment the following lines below -->
+    <!-- End scripts here -->
+</body>
+
+</html>
