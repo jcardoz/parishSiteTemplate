@@ -19,11 +19,6 @@
     <!-- Begin Navigation Bar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <!-- <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    St. Peters
-                </a>
-            </div> -->
             <!-- Button will be visible for small viewports below 768px-->
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-content">
                 <span class="sr-only">Toggle navigation</span>
@@ -100,14 +95,26 @@
                 <p class="style-info">
                     All HTML headings, &lt;h1&gt; through &lt;h6&gt;, are available.
                 </p>
+                <p class="style-info">
+                    Use <code>.thin</code>, <code>.bold</code> and <code>.italic</code> classes for thin, bold and italic text respectively.
+                </p>
+                <p class="style-info">
+                    Similarly use the <code>.bold-italic</code> class for both bold as well as italic text.
+                </p>
+                <p class="style-info">
+                    Use <code>.upper</code> class for upper-case text.
+                </p>
                 <p class="style-example">
                     Example
                 </p>
                 <div class="style-example">
                     <div data-xrayhtml class="prism">
                         <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+                        <h1 class="thin">Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
                         <h1 class="bold">Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
                         <h1 class="italic">Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+                        <h1 class="bold-italic">Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+                        <h1 class="upper">Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
                         <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
                         <h3>Grumpy wizards make toxic brew for the evil Queen and Jack.</h3>
                         <h4>Grumpy wizards make toxic brew for the evil Queen and Jack</h4>
@@ -145,6 +152,9 @@
                 <div class="style-example">
                     <div data-xrayhtml class="prism">
                         <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus nobis illum, deleniti odio tempore sit cumque, modi eaque, laudantium soluta! Voluptates officiis aperiam quam distinctio veritatis tempora ad perspiciatis.
+                        </p>
+                        <p class="bold">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloribus nobis illum, deleniti odio tempore sit cumque, modi eaque, laudantium soluta! Voluptates officiis aperiam quam distinctio veritatis tempora ad perspiciatis.
                         </p>
                     </div>
@@ -951,7 +961,7 @@
         </div>
     </div>
     <!-- Begin scripts here -->
-    	<script src="../scripts/vendor/jquery-1.12.4.js"></script>
+    <script src="../scripts/vendor/jquery-1.12.4.js"></script>
     <script src="../scripts/vendor/bootstrap.js"></script>
     <script src="../scripts/vendor/X-rayHTML.js"></script>
     <script src="../scripts/vendor/prism.min.js"></script>

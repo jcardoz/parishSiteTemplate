@@ -1,0 +1,62 @@
+$white: #FFFFFF;
+$black: #000000;
+$barberry: #E5D918;
+$tundora: #4D4D4D;
+$silver: #cccccc;
+$shipGray: #363138;
+
+$primary-color1: $barberry;
+
+$greyscale-color1: $white;
+$greyscale-color2: $silver;
+$greyscale-color3: $tundora;
+$greyscale-color4: $shipGray;
+$greyscale-color5: $black;
+
+.txt-primary-color1: {
+    color: $primary-color1;
+}
+
+.txt-greyscale-color1: {
+    color: $greyscale-color1;
+}
+
+.txt-greyscale-color2: {
+    color: $greyscale-color2;
+}
+
+.txt-greyscale-color3: {
+    color: $greyscale-color3;
+}
+
+.txt-greyscale-color4: {
+    color: $greyscale-color4;
+}
+
+.txt-greyscale-color5: {
+    color: $greyscale-color5;
+}
+
+.bg-primary-color1: {
+    background-color: $primary-color1;
+}
+
+.bg-greyscale-color1: {
+    background-color: $greyscale-color1;
+}
+
+.bg-greyscale-color2: {
+    background-color: $greyscale-color2;
+}
+
+.bg-greyscale-color3: {
+    background-color: $greyscale-color3;
+}
+
+.bg-greyscale-color4: {
+    background-color: $greyscale-color4;
+}
+
+.bg-greyscale-color5: {
+    background-color: $greyscale-color5;
+}
