@@ -1,0 +1,99 @@
+/*
+ * Style Guide for St. Peters Parish Site Template
+ */
+body 
+{
+ 	margin-top: 50px; /* Required for the static navigation bar */
+}
+.navbar-brand
+{
+	padding-top: 10px;
+}
+.navbar-header-text
+{
+	color: #fff;
+}
+
+h1 > small, h2 > small, h3 > small
+{
+	font-weight: lighter;
+}
+
+h2>small, p.style-info, .style-example
+{
+	margin-left: 10px;
+}
+p.style-info > span.highlight
+{
+	font-style: normal;
+  	font-weight: normal;
+  	background-color: #f5f5f5;
+  	color: #c92a3a;
+  	padding: 0.2em;
+}
+/* Fix added to ensure that the header is shown below the static nav bar */
+h1.topheader
+{
+	margin-top: 60px;
+}
+h1:before, h2:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -60px; 
+  height: 60px; 
+  visibility: hidden; 
+}
+/* End Header fix */
+p.style-example
+{
+	color: #777;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+h3>small, p.indent, .indent
+{
+	margin-left: 20px;
+}
+/* Begin Code Viewer styles */
+.source {
+	position: relative;
+}
+.source-panel {
+	tab-size: 3;
+	clear: both;
+}
+.source-panel pre {
+	margin: 0;
+}
+.source-panel code {
+	white-space: pre;
+}
+pre
+{
+	border-radius: 0;
+}
+/* End Code Viewer styles */
+
+ul.style-color
+{
+	padding-left: 0;
+}
+ul.style-color li
+{
+	list-style: none;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	color: #fff;
+	border-radius: 100px;
+	text-align: center;
+	padding-top: 85px;
+	margin: 0 0 20px 20px;
+}
+ul.style-color li.bg-greyscale-color1 {
+	border: 1px solid #000;
+}
+.style-color li.bg-patten-blue, .style-color li.bg-gray-light, .style-color li.bg-danger, .style-color li.bg-success, .style-color li.bg-warning{
+	color: #000;
+}

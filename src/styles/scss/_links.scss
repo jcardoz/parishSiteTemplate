@@ -1,0 +1,24 @@
+a, .link-secondary {
+    color: $greyscale-color5;
+    text-decoration: none;
+}
+
+a:hover, .link-secondary:hover {
+    color: $greyscale-color5;
+    text-decoration: underline;
+    font-family: 'OpenSans-Bold';
+}
+
+a:visited, .link-secondary:visited {
+	color: $greyscale-color5;
+    text-decoration: none;	
+}
+
+a:active, .link-secondary:active {
+	color: $greyscale-color5;
+    text-decoration: none;
+}
+
+.link-secondary, .link-secondary:hover, .link-secondary:visited, .link-secondary:active {
+	color: $primary-color1;
+}
