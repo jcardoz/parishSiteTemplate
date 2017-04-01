@@ -1,3 +1,5 @@
+// Primary Link
+
 a, .link-secondary {
     color: $greyscale-color5;
     text-decoration: none;
@@ -19,6 +21,7 @@ a:active, .link-secondary:active {
     text-decoration: none;
 }
 
+// Secondary Link Color
 .link-secondary, .link-secondary:hover, .link-secondary:visited, .link-secondary:active {
 	color: $primary-color1;
 }

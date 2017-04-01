@@ -1,0 +1,54 @@
+// Button styles
+.btn,
+.btn:hover {
+    border-radius: 0;
+    background-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.btn {
+    font-size: 16px;
+}
+
+a.btn-primary,
+a.btn-danger,
+a.btn-info,
+a.btn-success,
+a.btn-warning {
+    color: $primary-color1;
+}
+
+a.btn-secondary {
+    color: $greyscale-color5;
+}
+
+// Primary Button styles
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus {
+    background-color: transparent;
+    border: 2px solid $primary-color1;
+    color: $primary-color1;
+    outline: 0;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    font-family: "openSans-Bold";
+}
+
+// Secondary Button styles
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:active:focus {
+    background-color: transparent;
+    border: 2px solid $greyscale-color5;
+    color: $greyscale-color5;
+    outline: 0;
+}
