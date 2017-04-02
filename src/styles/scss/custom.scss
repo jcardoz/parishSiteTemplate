@@ -1,8 +1,8 @@
-@import "fonts";
-@import "typography";
-@import "color-palette";
-@import "links";
-@import "buttons";
+@import "partials/fonts";
+@import "partials/typography";
+@import "partials/color-palette";
+@import "partials/links";
+@import "partials/buttons";
 body {
     font-family: 'OpenSans-Regular';
 }
