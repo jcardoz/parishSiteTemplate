@@ -1,22 +1,22 @@
 // Primary Link
 
-a, .link-secondary {
+.link-primary, .link-secondary {
     color: $greyscale-color5;
     text-decoration: none;
 }
 
-a:hover, .link-secondary:hover {
+.link-primary:hover, .link-secondary:hover {
     color: $greyscale-color5;
     text-decoration: underline;
     font-family: 'OpenSans-Bold';
 }
 
-a:visited, .link-secondary:visited {
+.link-primary:visited, .link-secondary:visited {
 	color: $greyscale-color5;
     text-decoration: none;	
 }
 
-a:active, .link-secondary:active {
+.link-primary:active, .link-secondary:active {
 	color: $greyscale-color5;
     text-decoration: none;
 }

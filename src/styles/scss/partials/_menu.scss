@@ -1,0 +1,67 @@
+// Top navigation dropdown menu
+// TODO: refactor with SASS Constructs and nesting
+.navbar-nav {
+      li {
+      .dropdown-menu {
+          margin-top: -10px;
+          background-color: transparent;
+          border: 0px;
+          border-radius: 0;
+          box-shadow: none;
+      }
+    }
+    .dropdown-menu>li {
+        height: 35px;
+        font-family: "OpenSans-Semibold";
+        margin-bottom: 2px;
+    }
+    .dropdown-menu>li>a {
+        background-color: $primary-color1;
+        color: $greyscale-color5;
+        font-size: 14px;
+        display: block;
+        height: inherit;
+        padding-top: 7px;
+    }
+    .dropdown-menu>li>a:hover,
+    .dropdown-menu>li>a:focus,
+    .dropdown-menu > li.active > a,
+    .dropdown-menu > li.active > a:hover,
+    .dropdown-menu > li.active > a:focus {
+        background-color: $greyscale-color5;
+        color: $greyscale-color1;
+    }
+    .dropdown-menu .divider {
+        height: 1px;
+        margin: 2px 0;
+        overflow: hidden;
+        background-color: $primary-color1;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: $greyscale-color5;
+    }
+}
+
+@media (max-width: 767px) {
+      
+        .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+            background-color: $primary-color1;
+            color: $greyscale-color5;
+        }
+        .dropdown-menu>li>a:hover {
+            background-color: $greyscale-color5;
+            color: $greyscale-color1;
+        }
+        .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,
+        .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+            color: $greyscale-color1;
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav .open .dropdown-menu .divider{
+            height: 1px;
+            margin: 2px 0;
+            overflow: hidden;
+            background-color: $primary-color1;
+        }
+    }
+    /* END Media Query */
