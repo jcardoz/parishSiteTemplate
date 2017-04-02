@@ -1,0 +1,19 @@
+.separatorPlaceholder, %separatorPlaceholder {
+	display: block;
+	background-color: $primary-color1;
+	content: '';
+}
+.separator:after {
+	@extend %separatorPlaceholder;
+    height: 5px;
+    width: 62px;
+    margin: 30px 0;
+    
+}
+
+h5.separator-included:after {
+    @extend %separatorPlaceholder;
+    height: 3px;
+    width: 30px;
+    margin: 10px 0 20px 0;
+}
