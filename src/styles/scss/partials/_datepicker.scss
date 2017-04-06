@@ -1,0 +1,86 @@
+.datepicker {
+
+    // Month name and arrows
+    .datepicker-switch,
+    .prev,
+    .next {
+        font-family: "OpenSans-Bold";
+        text-transform: uppercase;
+        font-size: 16px;
+        color: $greyscale-color1;
+        background-color: $greyscale-color4;
+        border-radius: 0;
+        border: 1px solid $greyscale-color4;
+        &:hover {
+            background-color: $greyscale-color4;
+        }
+    }
+    
+    .dow,
+    table tbody tr td {
+        border-radius: 0;
+        border: 1px solid $greyscale-color2;
+        background-color: $greyscale-color7;
+    }
+    table tbody tr td.old,
+    table tbody tr td.day,
+    table tbody tr td.new,
+    // months and years are encompassed by span tags
+    table tbody tr td span,
+    table tbody tr td span.active,
+    table tbody tr td span.active.active {
+        font-family: "OpenSans-Regular";
+        color: $greyscale-color6;
+        &:hover {
+            color: $greyscale-color1;
+            background-color: $primary-color1;
+            text-shadow: none;
+        }
+    }
+    
+    // Sundays
+    table tbody tr td.day:first-child,
+    {
+        color: $primary-color1;
+        &:hover {
+            color: $greyscale-color1;
+            background-color: $primary-color1;
+            text-shadow: none;
+        }
+    }
+    
+    // Hide the previous and next months days
+    table tbody tr td.old,
+    table tbody tr td.old:first-child,
+    table tbody tr td.new,
+    table tbody tr td.new:first-child {
+        color: $greyscale-color7;
+        pointer-events: none; // Prevent clicks
+    }
+    
+    // Days of the week
+    .dow {
+        font-family: "OpenSans-Bold";
+        color: $greyscale-color2;
+    }
+    
+    // active
+    table tbody tr td.active,
+    table tbody tr td.active.active,
+    table tbody tr td.highlighted, 
+    table tbody tr td span.active,
+    table tbody tr td span.active.active,
+    table tbody tr td span.highlighted,
+    table tbody tr td span.focused {
+        color: $greyscale-color1;
+        background-color: $primary-color1;
+        border-color: $primary-color1;
+        text-shadow: none;
+        &:hover {
+            color: $greyscale-color1;
+            background-color: $primary-color1;
+            border-color: $primary-color1;
+            text-shadow: none;
+        }
+    }
+}

@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Parish Template - Style Guide</title>
     <!-- Begin styles here -->
+    <link rel="stylesheet" href="../styles/css/vendor/bootstrap-datepicker3.css">
     <link rel="stylesheet" href="../styles/css/vendor/bootstrap.css">
     <link rel="stylesheet" href="../styles/css/vendor/prism.css">
     <link rel="stylesheet" href="../styles/css/vendor/guide.css">
     <link rel="stylesheet" href="../styles/css/custom.css">
     <!-- For Production, Uncomment the following lines below -->
     <!-- End styles here -->
+    <script src="../scripts/vendor/jquery-1.12.4.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
@@ -63,6 +65,7 @@
                     </li>
                     <li role="presentation"><a href="#Buttons">Buttons</a></li>
                     <li role="presentation"><a href="#Separators">Separators</a></li>
+                    <li role="presentation"><a href="#Datepickers">Datepicker</a></li>
                     <li role="presentation"><a href="#Layout">Layout</a></li>
                 </ul>
             </div>
@@ -121,6 +124,7 @@
                         <h4>Grumpy wizards make toxic brew for the evil Queen and Jack</h4>
                         <h5>Grumpy wizards make toxic brew for the evil Queen and Jack</h5>
                         <h6>Grumpy wizards make toxic brew for the evil Queen and Jack</h6>
+                        
                     </div>
                 </div>
                 <hr />
@@ -890,10 +894,50 @@
                 <hr />
             </div>
             <!-- End Separator section -->
+            <!-- Begin Datepicker Section -->
+            <div class="col-xs-12">
+                <h1 id="Datepickers">
+                    <small>#6 </small>
+                    Datepickers
+                </h1>
+                <hr />
+                <p class="style-info">
+                    To add a datepicker, add a div with class say, <code>.datepicker</code> which will be used by the script to create one.
+                </p>
+                <p class="style-info">
+                	Refer to the following documentation for datepicker specific properties:
+                	<br />
+                	<a href="https://uxsolutions.github.io/bootstrap-datepicker" target="_blank">
+                		https://uxsolutions.github.io/bootstrap-datepicker
+                	</a>
+                </p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="datepicker">
+                        <!-- code is inserted by the script -->
+        		</div>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        
+						<!-- Add this code in your script file to initialize a datepicker  on .datepicker element 
+						on page load -->
+                		<script>
+                			// wait for the DOM to load
+                			$(document).ready(function() {
+                				// Initialize the datepicker
+						    	$('.datepicker').datepicker();
+						    });
+                		</script>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <!-- End Datepicker section -->
             <!-- Begin Layout Section -->
             <div class="col-xs-12">
                 <h1 id="Layout">
-                    <small>#6 </small>
+                    <small>#7 </small>
                     Layout
                 </h1>
                 <hr />
@@ -1006,8 +1050,9 @@
         </div>
     </div>
     <!-- Begin scripts here -->
-    <script src="../scripts/vendor/jquery-1.12.4.js"></script>
+    
     <script src="../scripts/vendor/bootstrap.js"></script>
+    <script src="../scripts/vendor/bootstrap-datepicker.js"></script>
     <script src="../scripts/vendor/X-rayHTML.js"></script>
     <script src="../scripts/vendor/prism.min.js"></script>
     <script src="../scripts/custom.js" />
@@ -1021,6 +1066,7 @@
             Prism.highlightAll();
         }
     });
+    
     </script>
     <!-- For Production, Uncomment the following lines below -->
     <!-- End scripts here -->
