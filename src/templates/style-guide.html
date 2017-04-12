@@ -66,6 +66,7 @@
                     <li role="presentation"><a href="#Buttons">Buttons</a></li>
                     <li role="presentation"><a href="#Separators">Separators</a></li>
                     <li role="presentation"><a href="#Datepickers">Datepicker</a></li>
+                    <li role="presentation"><a href="#Carousel">Carousel</a></li>
                     <li role="presentation"><a href="#Layout">Layout</a></li>
                 </ul>
             </div>
@@ -124,7 +125,6 @@
                         <h4>Grumpy wizards make toxic brew for the evil Queen and Jack</h4>
                         <h5>Grumpy wizards make toxic brew for the evil Queen and Jack</h5>
                         <h6>Grumpy wizards make toxic brew for the evil Queen and Jack</h6>
-                        
                     </div>
                 </div>
                 <hr />
@@ -177,7 +177,7 @@
                 <div class="style-example">
                     <div data-xrayhtml class="prism">
                         <a class="link-primary" href="#">Primary Link</a>
-						<br />
+                        <br />
                         <a class="link-secondary" href="#">Secondary Link</a>
                     </div>
                 </div>
@@ -245,7 +245,7 @@
                 </p>
                 <div class="style-example">
                     <h3>
-                      	Colors
+                        Colors
                     </h3>
                     <ul class="style-color">
                         <li class="bg-primary-color1">Barberry
@@ -905,39 +905,86 @@
                     To add a datepicker, add a div with class say, <code>.datepicker</code> which will be used by the script to create one.
                 </p>
                 <p class="style-info">
-                	Refer to the following documentation for datepicker specific properties:
-                	<br />
-                	<a href="https://uxsolutions.github.io/bootstrap-datepicker" target="_blank">
-                		https://uxsolutions.github.io/bootstrap-datepicker
-                	</a>
+                    Refer to the following documentation for datepicker specific properties:
+                    <br />
+                    <a href="https://uxsolutions.github.io/bootstrap-datepicker" target="_blank">
+                        https://uxsolutions.github.io/bootstrap-datepicker
+                    </a>
                 </p>
                 <p class="style-example">
                     Example
                 </p>
                 <div class="datepicker">
-                        <!-- code is inserted by the script -->
-        		</div>
+                    <!-- code is inserted by the script -->
+                </div>
                 <div class="style-example">
                     <div data-xrayhtml class="prism">
-                        
-						<!-- Add this code in your script file to initialize a datepicker  on .datepicker element 
-						on page load -->
-                		<script>
-                			// wait for the DOM to load
-                			$(document).ready(function() {
-                				// Initialize the datepicker
-						    	$('.datepicker').datepicker();
-						    });
-                		</script>
+                        <!-- Add this code in your script file to initialize a datepicker  on .datepicker element 
+                        on page load -->
+                        <script>
+                        // wait for the DOM to load
+                        $(document).ready(function() {
+                            // Initialize the datepicker
+                            $('.datepicker').datepicker();
+                        });
+                        </script>
                     </div>
                 </div>
                 <hr />
             </div>
             <!-- End Datepicker section -->
+            <!-- Begin Carousel Section -->
+            <div class="col-xs-12">
+                <h1 id="Carousel">
+                    <small>#7 </small>
+                    Carousel
+                </h1>
+                <hr />
+                <p class="style-info">
+                    A carousel is used to shuffle between multiple images over a period of time.</p>
+                <p class="style-example">
+                    Example
+                </p>
+                <div class="style-example">
+                    <div data-xrayhtml class="prism">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img data-src="holder.js/100px500?theme=social" alt="test 1">
+                                    <div class="carousel-caption">
+                                        <h3>Lorem Ipsum Est Dolor</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img data-src="holder.js/100px500?theme=vine" alt="test 2">
+                                    <div class="carousel-caption">
+                                        <h3>Lorem Ipsum Est Dolor</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img data-src="holder.js/100px500?theme=lava" alt="test 3">
+                                    <div class="carousel-caption">
+                                        <h3>Lorem Ipsum Est Dolor</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+            <!-- End Carousel section -->
             <!-- Begin Layout Section -->
             <div class="col-xs-12">
                 <h1 id="Layout">
-                    <small>#7 </small>
+                    <small>#8 </small>
                     Layout
                 </h1>
                 <hr />
@@ -1050,11 +1097,11 @@
         </div>
     </div>
     <!-- Begin scripts here -->
-    
     <script src="../scripts/vendor/bootstrap.js"></script>
     <script src="../scripts/vendor/bootstrap-datepicker.js"></script>
     <script src="../scripts/vendor/X-rayHTML.js"></script>
     <script src="../scripts/vendor/prism.min.js"></script>
+    <script src="../scripts/vendor/holder.js"></script>
     <script src="../scripts/custom.js" />
     <script>
     // Function to display the code snippets with syntax highlighting
@@ -1066,7 +1113,6 @@
             Prism.highlightAll();
         }
     });
-    
     </script>
     <!-- For Production, Uncomment the following lines below -->
     <!-- End scripts here -->
