@@ -26,3 +26,28 @@
 		height: 10px;
 	}
 }
+
+.anythingSlider-default {
+	padding: 0;	
+	.anythingWindow {
+		border-top: 0; // Removes the top and bottom borders
+		border-bottom: 0;
+	}
+}
+
+.anyslider {
+	width: 100%;
+	height: 500px; // Can be changed later based on what the site requires
+}
+
+.carousel-inline-images {
+	float:left;
+	margin-right: 27px;
+}
+
+// Spacer div between two rows of images in the anything slider
+.carousel-spacer {
+	clear: both;
+	width: 100%;
+	height: 27px;
+}
