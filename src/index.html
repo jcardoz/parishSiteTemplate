@@ -1,22 +1,210 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<!-- Begin styles here -->
-	<link rel="stylesheet" href="styles/css/vendor/bootstrap.css">	
-	<link rel="stylesheet" href="styles/css/custom.css">
-	<!-- For Production, Uncomment the following lines below -->
-	<!-- End styles here -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>St. Peter's Church, Bandra</title>
+    <!-- Begin styles here -->
+    <link rel="stylesheet" href="styles/css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="styles/css/vendor/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="styles/css/vendor/anythingslider.css">
+    <link rel="stylesheet" href="styles/css/custom.css">
+    <!-- For Production, Uncomment the following lines below -->
+    <!-- End styles here -->
 </head>
+
 <body>
-hello world
-	<!-- Begin scripts here -->
-	<script src="scripts/vendor/jquery-1.12.4.js" />
-	<script src="scripts/vendor/bootstrap.js" />
-	<script src="scripts/custom.js" />
-	<!-- For Production, Uncomment the following lines below -->
-	<!-- End scripts here -->
+    <!-- Begin Navigation -->
+    <!-- Begin Top Nav 1 -->
+    <nav class="navbar navbar-default navbar-top-navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Begin quicklinks -->
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                    <div class="row top-navigation-links">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <a href="#" class="nav-link-image">
+                                <img src="styles/images/time.svg" alt="clock-icon">
+                            </a>
+                            <p class="nav-link-text">
+                                <a class="link-primary" href="#">Mass Timings</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <a href="#" class="nav-link-image">
+                                <img src="styles/images/search.svg" alt="search-icon">
+                            </a>
+                            <p class="nav-link-text">
+                                <a class="link-primary" href="#">Parish Information</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <a href="#" class="nav-link-image">
+                                <img src="styles/images/contact.svg" alt="contact-icon">
+                            </a>
+                            <p class="nav-link-text">
+                                <a class="link-primary" href="#">Parish Contacts</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <a href="#" class="nav-link-image">
+                                <img src="styles/images/notification.svg" alt="notification-icon">
+                            </a>
+                            <p class="nav-link-text">
+                                <a class="link-primary" href="#">Notices of the week</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End quicklinks -->
+                <!-- Begin registration form -->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <label class="sr-only" for="form-email-registration-header">Register your email for updates</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="form-email-registration-header" placeholder="Register your email for updates">
+                                <div class="input-group-addon">
+                                    <img src="styles/images/search-arrow.svg" alt="search-arrow-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End registration form -->
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Nav 1 -->
+    <!-- Begin Top Nav 2 -->
+    <nav class="navbar navbar-inverse navbar-top-navigation-inverse">
+        <div class="container-fluid">
+            <!-- Button will be visible for small viewports below 768px-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-content">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- End Button -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="styles/images/site-logo.svg" alt="St. Peter's Church Logo">
+                </a>
+                <p class="navbar-text">
+                    <span class="navbar-header-text upper">St. Peter's Church, Bandra</span>
+                </p>
+            </div>
+            <div class="collapse navbar-collapse" id="navigation-content">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle upper txt-primary-color1 additional-spacing" data-toggle="dropdown" role="button" aria-expanded="false">Our Parish</span></a>
+                        <ul class="dropdown-menu absolute-additional-spacing" role="menu">
+                            <li><a href="#">Patron Saints</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Parish Mission</a></li>
+                            <li><a href="#">Parish Statistics</a></li>
+                            <li><a href="#">St. Stanislaus</a></li>
+                            <li><a href="#">St. Joseph's</a></li>
+                            <li><a href="#">Stanislaus Villa</a></li>
+                        </ul>
+                    </li>
+                    <li class="upper" role="presentation"><a class="txt-primary-color1" href="#">News</a></li>
+                    <li class="upper" role="presentation"><a class="txt-primary-color1" href="#">Information</a></li>
+                    <li class="upper" role="presentation"><a class="txt-primary-color1" href="#">Zones</a></li>
+                    <li class="upper" role="presentation"><a class="txt-primary-color1" href="#">Groups</a></li>
+                    <li class="upper" role="presentation"><a class="txt-primary-color1" href="#">Gallery</a></li>
+                    <li class="upper" role="presentation"><a class="txt-primary-color1" href="#">Contact Us</a></li>
+                </ul>
+                <!-- Begin registration form -->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <label class="sr-only" for="form-search-header">Register your email for updates</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="form-search-header">
+                                <div class="input-group-addon">
+                                    <img src="styles/images/search-icon.svg" alt="search-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End registration form -->
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Nav 2 -->
+    <!-- End Navigation -->
+    <!-- Begin Carousel -->
+    <div class="container-fluid carousel-container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div id="carousel-main" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-main" data-slide-to="1"></li>
+                        <li data-target="#carousel-main" data-slide-to="2"></li>
+                        <li data-target="#carousel-main" data-slide-to="3"></li>
+                        <li data-target="#carousel-main" data-slide-to="4"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img data-src="holder.js/100px500?theme=vine" alt="carousel-image">
+                            <div class="carousel-caption">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img data-src="holder.js/100px500?theme=social" alt="carousel-image">
+                            <div class="carousel-caption">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img data-src="holder.js/100px500?theme=lava" alt="carousel-image">
+                            <div class="carousel-caption">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img data-src="holder.js/100px500?theme=vine" alt="carousel-image">
+                            <div class="carousel-caption">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img data-src="holder.js/100px500?theme=social" alt="carousel-image">
+                            <div class="carousel-caption">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Carousel -->
+    <!-- Begin Welcome -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+                <h1 class="bold upper txt-primary-color1">Welcome to</h1>
+				<h1 class="bold upper txt-greyscale-color5">St. Peter's Church, Bandra</h1>
+			</div>
+		</div>
+	</div>
+    <!-- End Welcome -->
+    <!-- Begin scripts here -->
+    <script src="scripts/vendor/jquery-1.12.4.js"></script>
+    <script src="scripts/vendor/bootstrap.js"></script>
+    <script src="scripts/vendor/holder.js"></script>
+    <!-- For Production, Uncomment the following lines below -->
+    <!-- End scripts here -->
 </body>
+
 </html>

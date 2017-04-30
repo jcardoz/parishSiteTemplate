@@ -7,6 +7,16 @@
 		font-size: 3em;
 	}
 }
+.carousel-inner {
+	img {
+		width: 100%;
+	}
+}
+
+.carousel-caption {
+	right: 10%;
+	left: 10%;
+}
 
 .carousel-indicators 
 {
