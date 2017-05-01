@@ -1,47 +1,99 @@
 .carousel-container {
-	padding: 0;
+    padding: 0;
 }
 
 .additional-margin-top {
-	margin-top: 90px;
+    margin-top: 90px;
 }
 
 h1.reduce-margin-top {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 img.welcome-church-logo {
-	height: 150px;
-	width: 100%;
+    height: 150px;
+    width: 100%;
+}
+
+.schedule-container {
+    margin-top: 10px;
 }
 
 .datepicker-container {
-	padding-right: 0;
-	padding-left: 0;
+    padding-right: 0;
 }
 
 .datepicker-inline {
-	width: 100%;
-	.table-condensed {
-		width: 100%;
-	}
+    width: 100%;
+    .table-condensed {
+        width: 100%;
+    }
 }
+
 .event-container {
-	border: 1px solid $greyscale-color2;
-	border-left: 0;
-	min-height: 250px;
-	height: 250px;
+    border: 1px solid $greyscale-color2;
+    border-left: 0;
+    min-height: 250px;
+    height: 250px;
     overflow-y: scroll;
-	.margin-top-20 {
-		margin-top: 20px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-top-80 {
+    margin-top: 80px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
+.mission-container {
+		height: 630px;
+	    background-color: $greyscale-color4;
+	&>.row {
+		height: 630px;
+	    background-image: url('../images/background-1.jpg');
+	    background-repeat: no-repeat;
+	    background-size: 60% 100%;
+    	background-position: top right;
 	}
-	.margin-bottom-40 {
-		margin-bottom: 40px;
+	.mission-group-container {
+		background-color: $greyscale-color1;
+	    padding: 55px 15px 6px 70px;
 	}
 }
+
 @media screen and (max-width: 767px) {
     // Remove the spacing for the lower resolutions - below 768px
     .additional-margin-top {
         margin-top: 0;
     }
+    .datepicker-container {
+    	padding-right: 15px;
+	}
+	.mission-container {
+		background-color: $greyscale-color4;
+		&>.row {
+			background-image: none;
+		}
+		.mission-group-container {
+			padding:55px 15px 6px 15px;
+		}
+	}
+
 }
