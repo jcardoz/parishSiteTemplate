@@ -83,6 +83,17 @@ img.welcome-church-logo {
 	padding-left: 0;
 }
 
+.parish-container {
+	height: 630px;
+    background-color: $greyscale-color4;
+    &>.row {
+		height: 630px;
+	    background-image: url('../images/background-2.jpg');
+	    background-repeat: no-repeat;
+	    background-size: 20% 100%;
+    	background-position: top right;
+	}
+}
 @media screen and (max-width: 767px) {
     // Remove the spacing for the lower resolutions - below 768px
     .additional-margin-top {
