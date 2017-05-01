@@ -94,6 +94,55 @@ img.welcome-church-logo {
     	background-position: top right;
 	}
 }
+.clickableBackgroundContainer, %clickableBackgroundContainer {
+	background-repeat: no-repeat;
+    background-position: 10%;
+    cursor: pointer;
+}
+.bulletin-container {
+	@extend %clickableBackgroundContainer;
+    background-image: url('../images/border.svg');
+   	height: 110px;
+}
+
+.gallery-container {
+	@extend %clickableBackgroundContainer;
+	background-image: url('../images/gallery.jpg');
+	height: 200px;
+}
+
+.padding-top-10 {
+	padding-top: 10px;
+}
+
+.padding-bottom-10 {
+	padding-bottom: 10px;
+}
+.additional-link-container {
+	padding-right: 0;
+}
+.additional-link-list {
+	padding-left: 0;
+	li {
+		height: 120px;
+		list-style-type: none;
+		padding-top: 40px;
+		padding-left: 25px;
+	}
+	li:hover {
+		cursor: pointer;
+		background-image: url('../images/background-3.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		h5 {
+			color: $primary-color1;
+		}
+		p {
+			color: $greyscale-color1;
+		}
+	}
+}
+
 @media screen and (max-width: 767px) {
     // Remove the spacing for the lower resolutions - below 768px
     .additional-margin-top {
