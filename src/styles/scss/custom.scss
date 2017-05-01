@@ -10,10 +10,9 @@
 @import "partials/top-links";
 @import "partials/nav";
 
+// Import the page level scss
+@import "pages/main";
+
 body {
     font-family: 'OpenSans-Regular';
-}
-
-.carousel-container {
-	padding: 0;
 }

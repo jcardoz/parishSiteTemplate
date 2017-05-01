@@ -1,89 +1,95 @@
 .navbar-top-navigation {
-	background-color: $greyscale-color1;
-	min-height: 60px;
-	margin-bottom: 0;
-
-	.navbar-form {
-		margin-top: 15px;
-		.input-group {
-			.form-control, .input-group-addon {
-				border-radius: 0;
-				border: 1px solid $primary-color2;
-			}
-			.input-group-addon {
-				width: 1%;
-				background-color: $primary-color2;
-			}
-		}
-	}
+    background-color: $greyscale-color1;
+    min-height: 60px;
+    margin-bottom: 0;
+    .navbar-form {
+        margin-top: 15px;
+        .input-group {
+            .form-control,
+            .input-group-addon {
+                border-radius: 0;
+                border: 1px solid $primary-color2;
+            }
+            .input-group-addon {
+                width: 1%;
+                background-color: $primary-color2;
+            }
+        }
+    }
 }
 
 .navbar-top-navigation-inverse {
-	background-color: $greyscale-color5;
-	min-height: 70px;
-	border-radius: 0;
-	margin-bottom: 0;
-	.navbar-brand {
-		padding-top: 10px;	
-		img {
-			width: 85px;
-			height: 50px;
-		}
-	}
-	.navbar-text {
-		color: $greyscale-color1;
-		margin: 30px 0 0 0;	
-	}
-	.navbar-nav {
-		li {
-			a.txt-primary-color1 {
-				padding-top: 30px;
-				color: $primary-color1;
-			}
-			a.txt-primary-color1:hover {
-				color: $greyscale-color1;
-			}
-		}
-	}
-	.navbar-form {
-		margin-top: 20px;
-		.input-group {
-			.form-control, .input-group-addon {
-				border-radius: 0;
-				border: 1px solid $primary-color1;
-				color: $primary-color1;
-				background-color: $greyscale-color5;
-			}
-			.form-control {
-				border-right: 0;
-				box-shadow: none;
-			}
-			.input-group-addon {
-				width: 1%;
-				border-left: 0;
-			}
-		}
-	}
+    background-color: $greyscale-color5;
+    min-height: 70px;
+    border-radius: 0;
+    margin-bottom: 0;
+    .navbar-brand {
+        padding-top: 10px;
+        img {
+            width: 85px;
+            height: 50px;
+        }
+    }
+    .navbar-text {
+        color: $greyscale-color1;
+        margin: 30px 0 0 0;
+    }
+    .navbar-nav {
+        li {
+            a.txt-primary-color1 {
+                padding-top: 30px;
+                color: $primary-color1;
+            }
+            a.txt-primary-color1:hover {
+                color: $greyscale-color1;
+            }
+        }
+    }
+    .navbar-form {
+        margin-top: 20px;
+        .input-group {
+            .form-control,
+            .input-group-addon {
+                border-radius: 0;
+                border: 1px solid $primary-color1;
+                color: $primary-color1;
+                background-color: $greyscale-color5;
+            }
+            .form-control {
+                border-right: 0;
+                box-shadow: none;
+            }
+            .input-group-addon {
+                width: 1%;
+                border-left: 0;
+            }
+        }
+    }
+    .navbar-toggle {
+        margin-top: 20px;
+        border: 0;
+    }
 }
 
 .additional-spacing {
-	margin-left: 60px;
+    margin-left: 60px;
 }
 
 .absolute-additional-spacing {
-	left: 60px;
+    left: 60px;
 }
 
 .input-group-addon {
-	cursor: pointer;
-	img {
-		width: 10px;
-		height: 10px;
-	}
+    cursor: pointer;
+    img {
+        width: 10px;
+        height: 10px;
+    }
 }
+
 @media screen and (max-width: 767px) {
- // Remove the spacing for the lower resolutions - below 768px
- .additional-spacing {
-	margin-left: 0;
- }
+    // Remove the spacing for the lower resolutions - below 768px
+    .additional-spacing {
+        margin-left: 0;
+    }
 }
