@@ -42,12 +42,24 @@ img.welcome-church-logo {
     margin-top: 20px;
 }
 
+.padding-top-50 {
+	padding-top: 50px;
+}
+
+.padding-bottom-50 {
+	padding-bottom: 50px;
+}
+
 .margin-top-60 {
     margin-top: 60px;
 }
 
 .margin-top-80 {
     margin-top: 80px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
 }
 
 .margin-bottom-30 {
@@ -142,7 +154,17 @@ img.welcome-church-logo {
 		}
 	}
 }
-
+.social-links {
+	padding-left: 0;
+	li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	img {
+		width: 20px;
+		height: 20px;	
+	}
+}
 @media screen and (max-width: 767px) {
     // Remove the spacing for the lower resolutions - below 768px
     .additional-margin-top {
